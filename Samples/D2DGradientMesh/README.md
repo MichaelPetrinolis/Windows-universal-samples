@@ -1,5 +1,6 @@
-﻿<!---
+<!---
   category: GraphicsAndAnimation
+  samplefwlink: http://go.microsoft.com/fwlink/p/?LinkId=620532
 --->
 
 # Direct2D gradient mesh sample

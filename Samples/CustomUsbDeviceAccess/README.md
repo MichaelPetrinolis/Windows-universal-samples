@@ -1,5 +1,6 @@
 <!---
   category: DevicesSensorsAndPower
+  samplefwlink: http://go.microsoft.com/fwlink/p/?LinkId=620530
 --->
 
 # Custom USB device sample
@@ -136,9 +137,9 @@ The sample adds the [**DeviceCapability**](http://msdn.microsoft.com/library/win
 
 ## Operating system requirements
 
-* **Client:** Windows 10
+**Client:** Windows 10
 
-* **Server:** Windows Server 2016 Technical Preview
+**Server:** Windows Server 2016 Technical Preview
 
 ## Driver requirements
 
@@ -201,7 +202,7 @@ You can extend this sample for your device by performing these tasks.
 
 1. If you download the samples ZIP, be sure to unzip the entire archive, not just the folder with the sample you want to build. 
 2. Start Microsoft Visual Studio 2015 and select **File** \> **Open** \> **Project/Solution**.
-3. Starting in the folder where you unzipped the samples, go to the Samples subfolder, then the subfolder for this specific sample, then the subfolder for your preferred language (C++, C#, or JavaScript). Double-click the Visual Studio 2015 Solution (.sln) file.
+3. Starting in the folder where you unzipped the samples, go to the Samples subfolder, then the subfolder for this specific sample, then the subfolder for your preferred language (C++, C#, or JavaScript). Double-click the Visual Studio 2015 Solution (.sln) file.
 4. Press Ctrl+Shift+B, or select **Build** \> **Build Solution**.
 
 ## Run the sample

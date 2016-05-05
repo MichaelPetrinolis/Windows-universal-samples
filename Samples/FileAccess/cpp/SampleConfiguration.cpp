@@ -34,13 +34,13 @@ void MainPage::Initialize()
 
 void MainPage::ValidateFile()
 {
-    create_task(KnownFolders::PicturesLibrary->GetFileAsync(Filename)).then([this](task<StorageFile^> getFileTask)
+    create_task(KnownFolders::GetFolderForUserAsync(nullptr /* current user */, KnownFolderId::PicturesLibrary)).then([this](StorageFolder^ picturesFolder)
     {
-        try
-        {
-            sampleFile = getFileTask.get();
-        }
-        catch (Exception^)
+        return picturesFolder->TryGetItemAsync(Filename);
+    }).then([this](IStorageItem^ item)
+    {
+        sampleFile = safe_cast<StorageFile^>(item);
+        if (item == nullptr)
         {
             // If file doesn't exist, indicate users to use scenario 1
             NotifyUserFileNotExist();

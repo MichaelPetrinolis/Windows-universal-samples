@@ -20,7 +20,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace BackgroundTask
+namespace SDKTemplate
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -56,6 +56,7 @@ namespace BackgroundTask
                 }
             }
 
+            trigger = new ApplicationTrigger();
             UpdateUI();
         }
 
@@ -66,8 +67,6 @@ namespace BackgroundTask
         /// <param name="e"></param>
         private async void RegisterBackgroundTask(object sender, RoutedEventArgs e)
         {
-            trigger = new ApplicationTrigger();
-
             var task = BackgroundTaskSample.RegisterBackgroundTask(BackgroundTaskSample.SampleBackgroundTaskEntryPoint,
                                                                    BackgroundTaskSample.ApplicationTriggerTaskName,
                                                                    trigger,

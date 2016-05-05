@@ -1,22 +1,35 @@
 ﻿<!---
   category: Communications
+  samplefwlink: http://go.microsoft.com/fwlink/p/?LinkId=620605
 --->
 
 # SMS send and receive sample
 
 This sample shows how to use the SMS API (Windows.Devices.Sms) using following scenarios:
+
 - Send text message.
 - Set filter rules for registering with background infrastructure and then receiving the SMS based on filter rules.
 
+Windows.Devices.Sms is a low-level API intended for use by mobile operators
+to push information to apps on devices by using SMS as the signaling channel.
+For example, a mobile operator may send a specially-formatted SMS message
+to signal the voicemail app that the number of unread messages has changed.
+
+If you are interested in writing a chat app
+for sending and receiving messages that are visible to end users,
+then use the Windows.ApplicationModel.Chat namespace instead.
+
 ## Prerequisites
 
-This sample accesses privileged APIs and used by mobilebroadband operators.
-Hence requires restricted capability to be defined in package manifest.
+This sample accesses privileged APIs used by mobile broadband operators.
+Hence it requires the **cellularMessaging** capability,
+a [special-use capability](https://msdn.microsoft.com/library/windows/apps/mt270968#special_and_restricted_capabilities),
+to be declared in the package manifest.
 
 ### Remark
 
-- Since this sample uses restricted capability, this will fail WACK for restricted namespace test.
-- This also requires phone devices to be OEM developer unlocked.
+- This sample will not pass WACK because it uses a special-use capability.
+- This sample requires phone devices to be OEM developer unlocked.
 
 ### Reference
 
@@ -24,7 +37,7 @@ Hence requires restricted capability to be defined in package manifest.
 
 ## System requirements
 
-**Hardware:** Phone device or PC with mobilebroadband modem
+**Hardware:** Phone device or PC with mobile broadband modem
 
 **Client:** Windows 10 
 

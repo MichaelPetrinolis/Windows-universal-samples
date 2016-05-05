@@ -45,7 +45,7 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
   <PropertyGroup>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
@@ -115,7 +115,7 @@
     <Content Include="..\..\..\..\SharedContent\js\Microsoft.WinJS\js\WinJS.intellisense.js">
       <Link>Microsoft.WinJS.4.0\js\WinJS.intellisense.js</Link>
     </Content>
-    <Content Include="..\..\..\SharedContent\js\Microsoft.WinJS\fonts\Symbols.ttf">
+    <Content Include="..\..\..\..\SharedContent\js\Microsoft.WinJS\fonts\Symbols.ttf">
       <Link>Microsoft.WinJS.4.0\fonts\Symbols.ttf</Link>
     </Content>
     <Content Include="..\..\..\..\SharedContent\js\Microsoft.WinJS\js\base.js">

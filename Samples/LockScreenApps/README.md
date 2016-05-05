@@ -1,5 +1,6 @@
-﻿<!---
+<!---
   category: ControlsLayoutAndText 
+  samplefwlink: http://go.microsoft.com/fwlink/p/?LinkId=620564
 --->
 
 # Lock screen apps sample

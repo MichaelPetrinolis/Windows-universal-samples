@@ -1,5 +1,6 @@
 ﻿<!---
   category: AudioVideoAndCamera
+  samplefwlink: http://go.microsoft.com/fwlink/p/?LinkId=620629
 --->
 
 # Windows audio session (WASAPI) sample
@@ -17,11 +18,22 @@ Specifically, this sample covers:
 
 For more information on adding audio to your Windows Store app, see [Quickstart: adding audio to an app](http://msdn.microsoft.com/library/windows/apps/hh452730).
 
+Playing audio in the background is supported by the Windows Audio Session API
+only in communication scenarios as demonstrated by the [VoIP](/Samples/VoIP) sample.
+Instead, for general background audio playback of media,
+use the BackgroundMediaPlayer class demonstrated in the [Background Audio](/Samples/BackgroundAudio) sample.
+
 ## Related topics
 
-**Roadmaps**
+### Samples
 
-[Adding multimedia](http://msdn.microsoft.com/library/windows/apps/hh465134)
+[Background Audio](/Samples/BackgroundAudio)
+
+[VoIP](/Samples/VoIP)
+
+### Roadmaps
+
+[Audio, video, and camera](https://msdn.microsoft.com/library/windows/apps/mt203788)
 
 [Designing UX for apps](http://msdn.microsoft.com/library/windows/apps/hh767284)
 
@@ -31,7 +43,7 @@ For more information on adding audio to your Windows Store app, see [Quickstart:
 
 [Roadmap for apps using JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465037)
 
-**Reference**
+### Reference
 
 [Windows Audio Session API (WASAPI)](http://msdn.microsoft.com/library/windows/apps/dd371455)
 
@@ -41,14 +53,15 @@ For more information on adding audio to your Windows Store app, see [Quickstart:
 
 ## Operating system requirements
 
-Client: Windows 10
-Windows Phone 10
+**Client:** Windows 10
+
+**Phone:** Windows 10
 
 ## Build the sample
 
 1. If you download the samples ZIP, be sure to unzip the entire archive, not just the folder with the sample you want to build. 
 2. Start Microsoft Visual Studio 2015 and select **File** \> **Open** \> **Project/Solution**.
-3. Starting in the folder where you unzipped the samples, go to the Samples subfolder, then the subfolder for this specific sample, then the subfolder for your preferred language (C++, C#, or JavaScript). Double-click the Visual Studio 2015 Solution (.sln) file.
+3. Starting in the folder where you unzipped the samples, go to the Samples subfolder, then the subfolder for this specific sample, then the subfolder for your preferred language (C++, C#, or JavaScript). Double-click the Visual Studio 2015 Solution (.sln) file.
 4. Press Ctrl+Shift+B, or select **Build** \> **Build Solution**.
 
 ## Run the sample

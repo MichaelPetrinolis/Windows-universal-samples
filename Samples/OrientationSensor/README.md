@@ -1,5 +1,6 @@
-﻿<!---
+<!---
   category: DevicesSensorsAndPower
+  samplefwlink: http://go.microsoft.com/fwlink/p/?LinkId=620580
 --->
 
 # Orientation sensor sample
